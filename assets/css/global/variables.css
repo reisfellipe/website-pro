@@ -1,0 +1,16 @@
+:root{
+
+  --cor-preto: #00000;
+  --cor-branco: #FFF;
+  --cor-azul: #1DA6FF;
+
+  --regular: 'font-regular';
+  --bold: 'font-bold';
+
+  --f1: clamp(0.8rem, 1vw, 1rem);
+  --f2: clamp(1.0rem, 1vw, 1.2rem);
+  --f3: clamp(1.2rem, 1vw, 1.5rem);
+  --f4: clamp(1.5rem, 1vw, 2rem);
+  --f5: clamp(2.0rem, 1vw, 4rem);
+
+}

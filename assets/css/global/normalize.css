@@ -8,3 +8,12 @@
   font-weight: inherit;
   border: none;
 }
+
+body, html {
+  background-color: black;
+}
+
+::selection{
+  color: white;
+  background-color: red;
+}

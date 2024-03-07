@@ -1,4 +1,11 @@
  @font-face {
-  font-family: '';
-  src: url('');
+  font-family: 'font-bold';
+  src: url('../../files/fonts/fonte-bold.woff2') format('woff2');
  }
+
+ @font-face {
+  font-family: 'font-regular';
+  src: url('../../files/fonts/fonte-regular.woff2') format('woff2');
+ }
+
+ 
