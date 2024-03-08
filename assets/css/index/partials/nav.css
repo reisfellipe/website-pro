@@ -2,10 +2,12 @@ nav{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid var(--cor-cinza);
+  position: absolute;
   width: 100%;
-  background-color: #ffffff0f;  
-  height: 70px;
+  height: 90px;
   padding: 0 80px;
+  z-index: 10;
 }
 
 nav img.logo{

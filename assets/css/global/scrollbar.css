@@ -3,9 +3,9 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: orangered;
+  background-color: var(--cor-cinza);
 }
 
 ::-webkit-scrollbar-track{
-  background-color: black;
+  background-color: var(--cor-preto);
 }
