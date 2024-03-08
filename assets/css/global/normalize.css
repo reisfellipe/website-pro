@@ -9,11 +9,11 @@
   border: none;
 }
 
-body, html {
-  background-color: black;
+body,html{
+  background-color: var(--cor-preto);
 }
 
 ::selection{
-  color: white;
-  background-color: red;
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
 }
