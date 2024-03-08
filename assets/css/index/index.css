@@ -1,6 +1,3 @@
 @import "../global/global.css";
 @import "./partials/nav.css";
-
-p{
-  color: orange;
-}
+@import "./partials/section-apresentacao.css";
