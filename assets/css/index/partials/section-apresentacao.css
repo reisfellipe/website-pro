@@ -181,11 +181,13 @@
   
   .apresentacao .texto {
     width: 100%;
+    align-items: flex-start;
+
   }
     
   .apresentacao .texto h1{
-    font-size: var(--f5);
-    max-width: 200px;
+    font-size: 50px;
+    max-width: 100%;
   }
   
   .apresentacao .texto h2{
@@ -198,11 +200,19 @@
   }
   
   .apresentacao .texto .botoes {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
     margin: 25px 0 30px 0;
-  }
     
+  }
+  
+  .apresentacao .texto .botoes a{
+    margin: 0 15px;
+    font-size: 1.3rem;
+  }
+
   .apresentacao .texto .botoes a.destaque {
     margin: 10px 0 0 0;
   }
