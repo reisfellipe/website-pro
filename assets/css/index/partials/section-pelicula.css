@@ -173,3 +173,124 @@
     transform: scale(1);
   }
 }
+
+/* Responsivo */
+
+@media screen and (max-width:1000px) {
+  .pelicula {
+    padding: 50px 30px;
+  }
+  
+  .pelicula .quadro{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 ;
+  }
+  
+  .pelicula .texto {
+    padding: 0 30px 40px 30px;
+    width: 100%;
+  }
+  
+  .pelicula .texto img {
+    max-width: 150px;
+  }
+  
+  .pelicula .texto h2{
+    font-size: var(--f4);
+    line-height: 1.3;
+  }
+  
+  .pelicula .texto p{
+    line-height: 1.7;
+    font-size: 1.2rem;
+  }
+  
+  .pelicula .texto h3{
+    display: flex;
+    align-items: center;
+    font-family: var(--regular);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+  }
+
+  .pelicula .itens {
+    width: 100%;
+  }
+  
+  .pelicula .itens .item {
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    border-radius: 0px;
+    background-color: transparent;
+    border-top: 1px solid #ffffff1b;
+    margin: 5px 0;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .pelicula .itens .item.destaque{
+    border-top: 1px solid #ffffff1b;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+  }
+  
+  .pelicula .itens .item .foto {
+    width: 50px;
+    min-width: 50px;
+    height: 50px;
+    min-height: 50px;
+    margin: 0 15px 0 0;
+  }
+  
+  .pelicula .itens .item h3 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+  }
+
+  .pelicula .itens .item p {
+    font-size: var(--f2);
+  }
+  
+  .pelicula .quadro .blush{
+    width: 800px;
+    height: 800px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(#1DA6FF , transparent 50%);
+    opacity: 0.2;
+    z-index: 1;
+  }
+  
+  .pelicula .quadro .blush.um{
+    bottom: -300px;
+    left: 100px;
+    animation: blushOpacidade 7s  linear infinite;
+  }
+  
+  .pelicula .quadro .blush.dois{
+    top: -300px;
+    right: 100px;
+    opacity: 0.4;
+    animation: blushOpacidade 7s  linear infinite;
+  }
+  
+  @keyframes blushOpacidade  {
+    0% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    50%{
+      opacity: 0.3;
+      transform: scale(1.3);
+    }
+    100%{
+      opacity: 0.2;
+      transform: scale(1);
+    }
+  }
+}
