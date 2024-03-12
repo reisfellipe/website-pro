@@ -165,7 +165,8 @@
   
   .apresentacao .imagem .foto {
     height: 300px;
-    background-size: 900px;
+    background-size: 1000px;
+    background-repeat: no-repeat;
     border-radius: 10px;
   }
   
@@ -225,7 +226,13 @@
   
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:1140px) {
+  .apresentacao .texto h1{
+    font-size: 3.3rem;
+  }
+}
+
+@media screen and (max-width:430px){
   .apresentacao{
     flex-direction: column;
     padding: 120px 30px 60px;
