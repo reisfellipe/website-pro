@@ -4,7 +4,26 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 80px;
+  padding: 20px 80px 0 80px;
+}
+
+.pelicula.primeira {
+  padding:80px 80px 0 80px;
+}
+
+/* Segunda section pelicula */
+.pelicula.segunda .quadro {
+  flex-direction: row-reverse;
+}
+
+.pelicula.segunda .texto{
+  padding: 0 0 0 50px;
+}
+
+/* section última película */
+.pelicula.ultima {
+  flex-direction: row-reverse;
+  padding:20px 80px 80px 80px;
 }
 
 .pelicula .quadro{
@@ -178,8 +197,9 @@
 
 @media screen and (max-width:1000px) {
   .pelicula {
-    padding: 50px 30px;
+    padding: 60px 30px 0 ;
   }
+
   
   .pelicula .quadro{
     display: flex;
@@ -292,5 +312,11 @@
       opacity: 0.2;
       transform: scale(1);
     }
+  }
+}
+
+@media screen and (max-width:600px){
+  .pelicula{
+    padding: 40px 30px 10px !important;
   }
 }
