@@ -1,0 +1,86 @@
+.comparacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0 80px 80px 80px;
+  border-top: 1px solid var(--cor-cinza);
+}
+
+.comparacao .titulo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 80px 0;
+  /* border-bottom: 1px solid var(--cor-cinza); */
+}
+
+.comparacao .titulo h2{
+  font-family: var(--bold);
+  font-size: var(--f6);
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  line-height: 1;
+  max-width: 600px;
+  margin: 20px 0 0;
+}
+
+.comparacao .titulo h2 span{
+  color: var(--cor-azul);
+}
+
+
+.comparacao .titulo h3 {
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  opacity: 0.7;
+}
+
+.comparacao .planilha {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  border: 1px solid var(--cor-cinza);
+  border-top: none;
+}
+
+.comparacao .planilha .parte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 16.66%;
+}
+
+.comparacao .planilha .parte h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-azul);
+  width: 100%;
+  height: 60px;
+  border-top: 1px solid var(--cor-cinza);
+}
+
+.comparacao .planilha .parte .item {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  height: 60px;  
+  border-top: 1px solid var(--cor-cinza);
+  position: relative;
+}
+
+.comparacao .planilha .parte h4 {
+  font-family: var(--bold);
+  font-size: var(--f3);
+  color: var(--cor-branco);
+  
+}
+

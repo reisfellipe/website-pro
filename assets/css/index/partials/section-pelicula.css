@@ -25,10 +25,6 @@
   background: radial-gradient(#ffffff, transparent 50%);
 }
 
-.pelicula.segunda .quadro .blush.um {
-
-}
-
 /* section última película */
 .pelicula.ultima .quadro{
   flex-direction: row-reverse;
