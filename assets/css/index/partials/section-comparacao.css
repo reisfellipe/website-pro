@@ -22,7 +22,7 @@
   font-size: var(--f6);
   color: var(--cor-branco);
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 1.2;
   max-width: 600px;
   margin: 20px 0 0;
 }
@@ -44,6 +44,7 @@
   align-items: flex-start;
   width: 100%;
   border: 1px solid var(--cor-cinza);
+  border-left: none;
   border-top: none;
 }
 
@@ -52,7 +53,13 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 16.66%;
+  border-left: 1px solid var(--cor-cinza);
+  width: 16%;
+  position: relative;
+}
+
+.comparacao .planilha .parte.um {
+  width: 20%;
 }
 
 .comparacao .planilha .parte h3 {
@@ -61,10 +68,21 @@
   justify-content: center;
   font-family: var(--regular);
   font-size: var(--f2);
-  color: var(--cor-azul);
+  font-weight: bold;
+  opacity: .9;
+  color: var(--cor-branco);
   width: 100%;
-  height: 60px;
+  height: 80px;
   border-top: 1px solid var(--cor-cinza);
+}
+
+.comparacao .planilha .parte:hover h4{
+  color: var(--cor-azul);
+}
+
+.comparacao .planilha .parte:hover .item p{
+  color: var(--cor-azul);
+  opacity: 1;
 }
 
 .comparacao .planilha .parte .item {
@@ -72,15 +90,80 @@
   align-items: center;
   justify-content:center;
   width: 100%;
-  height: 60px;  
+  height: 80px;  
   border-top: 1px solid var(--cor-cinza);
-  position: relative;
+}
+
+.comparacao .planilha .parte .item img {
+  width: 100%;
+  max-width: 15px;
+  margin: 0 10px 0 0;
 }
 
 .comparacao .planilha .parte h4 {
   font-family: var(--bold);
-  font-size: var(--f3);
+  font-size: var(--f2);
   color: var(--cor-branco);
-  
+  position: absolute;
+  top: -40px;
+  transition: all 1s;
 }
 
+.comparacao .planilha .parte p{
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  opacity: 0.8;
+  transition: all 1s;
+}
+
+/* Responsivo */
+
+@media screen and (max-width:1000px) {
+  .comparacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px 50px 30px;
+    border-top: 1px solid var(--cor-cinza);
+  }
+    
+  .comparacao .titulo h2{
+    font-size: var(--f5);
+  }
+  
+
+  .comparacao .titulo{
+    padding: 60px 30px 30px 0;
+  }
+
+  .comparacao .titulo h3 {
+    font-family: var(--regular);
+    font-size: var(--f2);
+    color: var(--cor-branco);
+    opacity: 0.7;
+  }
+  
+  .comparacao .planilha {
+    overflow-x: scroll;
+    border-right: none;
+    padding: 35px 0 0 0;
+  }
+
+  
+  .comparacao .planilha::-webkit-scrollbar  {
+    display: none;
+  }
+  
+  .comparacao .planilha .parte {
+    width: 210px;
+    min-width: 210px;
+  }
+  
+  .comparacao .planilha .parte.um {
+    width: 170px;
+    min-width: 210px;
+    border-left: none;
+  }  
+}
