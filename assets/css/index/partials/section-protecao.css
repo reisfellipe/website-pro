@@ -1,0 +1,74 @@
+.protecao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 80px;
+  background: linear-gradient(0deg, #1DA6FF, #0b6eb0);
+  background: -webkit-linear-gradient(0deg, #1DA6FF, #0b6eb0);
+  overflow: hidden;
+}
+
+.protecao .imagem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  position: relative;
+}
+
+.protecao .imagem .foto {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.protecao .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+  z-index: 2;
+}
+
+.protecao .texto h2{
+  font-family: var(--bold);
+  font-size: var(--f6);
+  color: var(--cor-branco);
+  text-transform: uppercase;
+  line-height: 1.3;
+  max-width: 400px;
+}
+
+.protecao .texto h2 span{
+  color: var(--cor-azul);
+}
+
+.protecao .texto p{
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  opacity: 0.7;
+  line-height: 1.5;
+  max-width: 400px;
+  margin: 5px 0 20px 0;
+  font-weight: bolder;
+}
+
+
+.protecao .texto a {
+  font-family: var(--bold);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  background-color: var(--cor-azul);
+  padding: 15px 25px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+.protecao .texto a:hover{  
+  color: var(--cor-azul);
+  background-color: var(--cor-branco);
+}

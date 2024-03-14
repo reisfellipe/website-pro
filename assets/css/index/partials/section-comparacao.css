@@ -23,8 +23,9 @@
   color: var(--cor-branco);
   text-transform: uppercase;
   line-height: 1.2;
+  /* width: 95vw; */
   max-width: 600px;
-  margin: 20px 0 0;
+  margin: 20px auto;
 }
 
 .comparacao .titulo h2 span{
@@ -135,13 +136,14 @@
   
 
   .comparacao .titulo{
-    padding: 60px 30px 30px 0;
+    padding: 60px 30px 30px 30px;
   }
 
   .comparacao .titulo h3 {
     font-family: var(--regular);
     font-size: var(--f2);
     color: var(--cor-branco);
+    font-weight: bold;
     opacity: 0.7;
   }
   
