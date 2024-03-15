@@ -3,7 +3,8 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: var(--cor-cinza);
+  background-color: var(--cor-azul);
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track{
