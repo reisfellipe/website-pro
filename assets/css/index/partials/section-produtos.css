@@ -211,3 +211,28 @@
   }
   
 }
+@media screen and (max-width:600px) {
+  
+  .produtos .titulo h2{
+    font-size: var(--f4);
+    line-height: 1.5;
+    max-width: 300px;
+  }
+  
+  .produtos .quadros {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 60px 20px 0 30px;
+  }
+
+  .produtos .quadros::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .produtos .quadros .quadro {
+    min-width: 95%;
+    max-width: 350px;
+    margin: 0 10px 0 0;
+  }
+}
+  

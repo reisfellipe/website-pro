@@ -49,7 +49,7 @@
 .quem-somos .quadros {
   display: flex;
   justify-content: space-between;
-  padding: 60px 0 0 0;
+  padding: 90px 0 0 0;
   width: 100%;
   z-index: 2;
 }
@@ -66,12 +66,28 @@
   transition: all .3s;
 }
 
-.quem-somos .quadros .quadro.destaque{
-  background-color: var(--cor-preto);
-}
 
 .quem-somos .quadros .quadro:hover {
   background-color: #1DA6FF10;
+}
+
+.quem-somos .quadros .quadro .icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  background-color: #ffffff1e;
+  border: 1px solid var(--cor-azul);
+}
+
+
+.quem-somos .quadros .quadro .icone img {
+  width: 100%;
+  max-width: 40px;
 }
 
 .quem-somos .quadros .quadro .texto{
@@ -80,15 +96,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 50px 30px 110px 30px;
+  padding: 70px 30px 40px 30px;
   height: 100%;
-}
-
-.quem-somos .quadros .quadro .texto h3 {
-  font-family: var(--bold);
-  font-size: var(--f4);
-  color: var(--cor-branco);
-  font-weight: bold;
 }
 
 .quem-somos .quadros .quadro .texto p {
@@ -99,25 +108,6 @@
   max-width: 260px;
   line-height: 1.5;
   margin: 10px 0 0 0;
-}
-
-.quem-somos .quadros .quadro .texto a {
-  font-family: var(--bold);
-  font-size: var(--f2);
-  color: var(--cor-azul);
-  border-top: 1px solid var(--cor-azul);
-  width: 100%;
-  padding: 20px;
-  border-radius: 0 0 10px 10px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all .3s;
-}
-
-.quem-somos .quadros .quadro .texto a:hover {
-  color: var(--cor-branco);
-  background-color: #2222224d;
 }
 
 .quem-somos .blush{
@@ -179,7 +169,7 @@
   .quem-somos .quadros {
     justify-content: flex-start;
     overflow-x: scroll;
-    padding: 60px 20px 0 30px;
+    padding: 100px 20px 0 30px;
   }
 
   .quem-somos .quadros::-webkit-scrollbar{
@@ -191,6 +181,56 @@
     min-width: 350px;
     max-width: 350px;
     margin: 0 10px 0 0;
+  }
+  
+  .quem-somos .quadros .quadro.destaque{
+    background-color: var(--cor-preto);
+  }
+  
+  
+  .quem-somos .quadros .quadro .foto{
+    height: 180px; 
+    min-height: 140px;
+  }
+  
+  .quem-somos .blush{
+    width: 600px;
+    height: 600px;
+  }
+  
+}
+
+@media screen and (max-width:600px) {
+  .quem-somos {
+    padding: 50px 0;
+  }
+
+  .quem-somos .titulo {
+    padding: 0 30px;
+  }
+  
+  .quem-somos .titulo h2{
+    font-size: var(--f4);
+    line-height: 1.5;
+    max-width: 300px;
+    margin: 0 20px;
+  }
+  
+  .quem-somos .quadros {
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 100px 20px 20px 30px;
+  }
+
+  .quem-somos .quadros::-webkit-scrollbar{
+    display: none;
+  }
+  
+  .quem-somos .quadros .quadro {
+    width: 70%;
+    min-width: 95%;
+    max-width: 350px;
+    margin: 0 15px 0 0;
   }
   
   .quem-somos .quadros .quadro.destaque{
