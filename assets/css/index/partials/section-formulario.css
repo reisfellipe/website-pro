@@ -68,6 +68,9 @@
 }
 
 .formulario .quadro form .input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   width: 100%;
   margin: 0 0 10px 0;
@@ -93,6 +96,10 @@
   transition: all 0.4s;
 }
 
+
+.formulario .quadro form .input.icone input {
+  padding: 20px 20px 20px 50px;
+} 
 
 .formulario .quadro form .input input::placeholder{
   opacity: 1;
