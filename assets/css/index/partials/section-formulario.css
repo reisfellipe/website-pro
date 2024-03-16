@@ -130,6 +130,32 @@
   background-color: #ffffff1a;
 }
 
+
+.formulario .quadro form .input textarea {
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  font-weight: 400;
+  background-color: #ffffff10;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  line-height: 1.5;
+  transition: all 0.4s;
+}
+
+
+.formulario .quadro form .input textarea::placeholder{
+  opacity: 1;
+  color: #ffffff6a;
+}
+
+
+.formulario .quadro form .input textarea:focus {
+  background-color: #ffffff1a;
+}
+
 .formulario .blush{
   width: 1000px;
   height: 1000px;
@@ -168,6 +194,33 @@
     opacity: 0.2;
     transform: scale(1);
   }
+}
+
+.alerta {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: var(--cor-branco);
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 600px;
+  z-index: 5;
+}
+
+
+.alerta h3 {
+  font-family: var(--bold);
+  font-size: var(--f3);
+  color: var(--cor-verde);
+}
+
+.alerta p {
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-preto);
+  font-weight: bolder;
 }
 
 /* Responsivo */
