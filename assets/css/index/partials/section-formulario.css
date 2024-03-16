@@ -207,8 +207,37 @@
   width: 100%;
   max-width: 600px;
   z-index: 5;
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+  transition: all 0.3s;
 }
 
+.alerta.mostrar {
+  opacity: 1;
+  visibility: 1;
+  transform: translate(-50%, 0) rotate(0deg);
+}
+
+.alerta .icon-alert {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alerta .text-alert {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.alerta .icon-alert img {
+  width: 100%;
+  max-width: 90px;
+  height: 90px;
+  padding: 10px 10px;
+}
 
 .alerta h3 {
   font-family: var(--bold);
@@ -243,5 +272,9 @@
     background: radial-gradient(#1DA6FF , transparent 50%);
     opacity: 0.2;
     z-index: 1;
+  }
+
+  .alerta  {
+    max-width: 80%;
   }
 }
