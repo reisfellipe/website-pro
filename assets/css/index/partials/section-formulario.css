@@ -169,3 +169,26 @@
     transform: scale(1);
   }
 }
+
+/* Responsivo */
+
+@media screen and (max-width:1000px) {
+  .formulario  {
+    padding: 60px 30px;
+  }
+
+  .formulario .quadro .capa{
+    height: 150px;
+  }
+
+  .formulario .blush{
+    width: 700px;
+    height: 700px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    background: radial-gradient(#1DA6FF , transparent 50%);
+    opacity: 0.2;
+    z-index: 1;
+  }
+}
