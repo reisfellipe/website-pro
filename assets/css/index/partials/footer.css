@@ -19,6 +19,9 @@ footer .partes .parte {
   width: 25%;
 }
 
+footer .partes .parte.um {
+  width: 50%;
+}
 
 footer .partes .parte img {
   width: 100%;
@@ -69,10 +72,6 @@ footer .partes .parte h3 {
   margin: 20px 0 0 0;
 }
 
-footer .partes .parte.um {
-  width: 40%;
-}
-
 
 footer .copy {
   display: flex;
@@ -80,6 +79,12 @@ footer .copy {
   justify-content: center;
   width: 100%;
   padding: 30px 80px;
+  border-top: 1px solid var(--cor-cinza);
 }
 
-footer .copy p {}
+footer .copy p {
+  font-family: var(--regular);
+  font-size: var(--f2);
+  color: var(--cor-branco);
+  line-height: 1.5;
+}
