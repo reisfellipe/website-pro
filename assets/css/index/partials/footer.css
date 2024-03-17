@@ -88,3 +88,44 @@ footer .copy p {
   color: var(--cor-branco);
   line-height: 1.5;
 }
+
+/* Responsivo */
+
+@media screen and (max-width:1000px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  footer .partes {
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 30px 30px 30px;
+  }
+  
+  footer .partes .parte {
+    width: 100%;
+    margin: 0  0 30px 0;
+  }
+
+
+  footer .partes .parte.um {
+    width: 100%;
+  }
+
+  
+  footer .partes .parte.um p{
+    max-width: 400px;
+  }
+
+  footer .copy {
+    width: 100%;
+    padding: 30px;
+  }
+  
+  footer .copy p {
+    text-align: center;
+  }
+  
+}
